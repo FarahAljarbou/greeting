@@ -14,7 +14,7 @@
 
 body{
     background-color: #1b1b1b;
-    line-height: 1.6;
+    line-height: 2.6;
 
 }
 
@@ -41,7 +41,7 @@ h1 {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
     background: #ee8fd3;
-    width: 85vw;
+    width: 90vw;
     color: #fff;
     display: inline-block;
     box-shadow: 2px 2px 1px 0px #330835;
@@ -72,7 +72,7 @@ h1 {
 .date {
     display: inline;
     min-width: 162px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', serif;
     font-size: 2em;
     padding-right: 30px;
 }
@@ -81,7 +81,7 @@ h1 {
     display:inline;
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
-     padding-right: 30px;
+     padding-right: 20px;
 }
 
     </style>
@@ -117,12 +117,11 @@ var name = "Farah";
 var today = new Date();
 var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
-var seconds = zeros(today.getSeconds());
 if(today.getHours() >=12){
-    seconds+=" PM"
+    minutes+=" PM"
 }
 else{
-    seconds+=" AM"
+    minutes+=" AM"
 }
 hrs = today.getHours();
 if (hrs < 12)
